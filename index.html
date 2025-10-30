@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Paw It Forward Movement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --bg: #f7efe7;
+        --card: #ffffff;
+        --accent: #c8906b;
+        --border: #e7d1c0;
+        --text: #412c22;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      header {
+        background: #fff;
+        border-bottom: 3px solid rgba(200,144,107,.2);
+        padding: 1.1rem 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .title { font-weight: 700; font-size: 1.25rem; }
+      .logos { display: flex; gap: 1rem; font-weight: 600; }
+      .hero { display: flex; gap: 1.5rem; padding: 1.5rem 1.25rem 1rem; align-items: stretch; }
+      .hero-left { flex: 1; }
+      .hero-img {
+        background: #ddd;
+        border-radius: 14px;
+        min-height: 240px;
+        background-size: cover;
+        background-position: center;
+      }
+      .social-links { margin-top: 1rem; display: flex; gap: .75rem; flex-wrap: wrap; }
+      .social-links a {
+        background: #fff;
+        border: 1px solid rgba(0,0,0,.05);
+        border-radius: 999px;
+        padding: .35rem .9rem;
+        text-decoration: none;
+        color: #412c22;
+        font-weight: 500;
+        font-size: .9rem;
+      }
+      .hero-right {
+        flex: 1;
+        background: #fff;
+        border: 4px solid rgba(200,144,107,.35);
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
+      }
+      .section-label {
+        background: var(--accent);
+        color: #fff;
+        display: inline-block;
+        padding: .35rem .9rem;
+        border-radius: 999px;
+        font-weight: 600;
+        margin-bottom: .75rem;
+      }
+      .hero-right h2 { margin: 0 0 .6rem; }
+      .two-col { display: flex; gap: 1.25rem; padding: 0 1.25rem 2.5rem; }
+      .card {
+        background: #fff;
+        border-radius: 14px;
+        padding: 1rem 1.1rem 1.3rem;
+        flex: 1;
+        border: 1px solid rgba(0,0,0,.02);
+        box-shadow: 0 12px 25px rgba(0,0,0,.02);
+      }
+      .card-title {
+        background: var(--accent);
+        color: #fff;
+        display: inline-block;
+        padding: .35rem .8rem;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-bottom: .7rem;
+      }
+      pre { white-space: pre-wrap; font-family: inherit; margin: 0; }
+      @media (max-width: 900px) {
+        .hero, .two-col { flex-direction: column; }
+        header { flex-direction: column; gap: .5rem; align-items: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title" id="site-title">Paw It Forward</div>
+      <div class="logos" id="logos">
+        <span>GPS</span>
+        <span>Pup O’Clock</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-img" id="hero-image" style="background-image:url('/uploads/hero.jpg');"></div>
+        <div class="social-links">
+          <a id="gps-link" href="https://www.instagram.com/thegermanpawsquad" target="_blank">German Paw Squad IG</a>
+          <a id="pup-link" href="https://www.instagram.com/pupoclock_" target="_blank">Pup O’Clock IG</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <span class="section-label" id="monthly-title">Thankful for my pup</span>
+        <p id="monthly-message">
+          This month we’re celebrating kids and their dogs — the bond, the lessons, and the love. By creating that bond, we hope to keep more dogs out of shelters.
+        </p>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="card">
+        <div class="card-title">How it works</div>
+        <pre id="how-it-works">1. Follow @thegermanpawsquad and @pupoclock_
+2. Comment on the monthly post
+3. Bear, Willow & Bubba pick a winner
+4. Winner + shelter both get boxes 🎁</pre>
+      </div>
+      <div class="card">
+        <div class="card-title">Prizes</div>
+        <pre id="prizes">• 6 months of Pup O’Clock for YOU
+• 10 donated boxes to a shelter of your choice
+• Feature from The German Paw Squad 🐾</pre>
+      </div>
+    </section>
+  </body>
+</html>
